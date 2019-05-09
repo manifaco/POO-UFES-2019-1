@@ -46,16 +46,16 @@ public class LivroDeBiblioteca extends Livro implements ItemDeBiblioteca {
 	public boolean isEmprestado() {
 		return statusEmprestimo;
 	}
-	public void empresta() {
-		statusEmprestimo=true;
+	public void empresta() {//modifica o status de emprestimo
+		this.statusEmprestimo=true;
 	}
-	public void devolve() {
-		statusEmprestimo=false;
+	public void devolve() {//empresta o livro
+		this.statusEmprestimo=false;
 	}
-	public String localiza() {
-		return localizacao;
+	public String localiza() {//retorna a localização do livro
+		return this.localizacao;
 	}
-	public String apresentaDescricao() {
-		return descricao;
+	public String apresentaDescricao() {//retorna a descrição
+		return this.descricao;
 	}
 }
